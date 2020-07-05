@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Yatra One', cursive;
+    src: url('../fonts/logo/YatraOne-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+} 
+
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    overflow-y: auto;
+  }
+/* input {
+    outline: none;
+  } */
+a {
+    text-decoration: none;
+  }
+  ul,
+li {
+    list-style: none;
+  }
+
+
+.header{
+    background-color: #4cd137;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    font-family: 'Yatra One', cursive;
+    color: #f5f6fa;
+    
+}
+
+.header__nav__link{
+    color: #f5f6fa;
+}
+
+.header__search svg{
+    width: 30px;
+    height: 30px;
+    fill: #f5f6fa;
+    cursor: pointer;
+}
+
+.search-input{
+    position: absolute;
+    top: 10.8%;
+    left: -300px;
+    width: 100%;
+    transition: 0.35s linear;
+    opacity: 1;
+}
+
+.search-input input[type='text']{
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-bottom: 1px solid #4cd137;
+    height: 32px;
+    box-shadow:  1px 1px 6px 0px rgba(0,0,0,0.4);
+    padding: 0px 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.search-input input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
