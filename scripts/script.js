@@ -4,12 +4,15 @@ $(document).ready(function(){
     });
 
     $("#burger").click(function(){
-        if ($("#burger").hasClass('header__burger--closed')){
-            $("#burger").removeClass('header__burger--closed');
-            $("#burger").addClass('header__burger--opened');
-        } else{
-            $("#burger").removeClass('header__burger--opened');
-            $("#burger").addClass('header__burger--closed');
-        }
+        $("#nav__mobile").animate({
+            left: "0%"
+        }, 300);
     });
+    
+    $("#nav__close").click(function(){
+        $("#nav__mobile").animate({
+            left: "-100%"
+        }, 300); 
+    });
+    
 });
