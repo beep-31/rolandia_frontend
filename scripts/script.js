@@ -1,10 +1,15 @@
 $(document).ready(function(){
     $("#search_icon").click(function(){
-        if($('#searchbox').css("left")=='-300px'){
-            $("#searchbox").animate({left:'0px'}, 300);
+        $("#searchbox").toggleClass('search-input--active');
+    });
+
+    $("#burger").click(function(){
+        if ($("#burger").hasClass('header__burger--closed')){
+            $("#burger").removeClass('header__burger--closed');
+            $("#burger").addClass('header__burger--opened');
         } else{
-            $("#searchbox").animate({left:'-300px'}, 300);
+            $("#burger").removeClass('header__burger--opened');
+            $("#burger").addClass('header__burger--closed');
         }
-        
     });
 });
