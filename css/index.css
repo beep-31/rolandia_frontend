@@ -45,7 +45,7 @@ li {
 
 
 .header{
-    background-color: #4cd137;
+    background-color: #fac25a;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,8 +58,6 @@ li {
 .header__nav__link{
     color: #f5f6fa;
 }
-
-.header__search{}
 
 .header__search svg{
     width: 30px;
@@ -93,7 +91,7 @@ li {
     width: 100%;
     max-width: 200px;
     border: none;
-    border-bottom: 1px solid #4cd137;
+    border-bottom: 1px solid #fdcb6e;
     height: 32px;
     box-shadow:  1px 1px 6px 0px rgba(0,0,0,0.4);
     padding: 0px 2px;
@@ -115,10 +113,15 @@ li {
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
   z-index: 5;
   background-color: #dcdde1;
+}
+
+.nav__close{
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 .nav__links{
@@ -189,4 +192,49 @@ li {
   top: -10px;
   left: 0;
   transition: 0.1s linear;
+}
+
+.intro{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.intro__title{
+  font-size: 24px;
+  color: #202020;
+  margin-bottom: 50px;
+  
+}
+
+button{
+  color: black;
+}
+
+.search__inner{
+  margin: 0 auto;
+  width: 80vw;
+  padding: 10px 20px;
+  background-color: #fac25a;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #fac25a, 0 0 0 20px #ffeaa7;
+}
+
+.search__inner form{
+  height: 15px;
+}
+
+.search__input input{
+  width: 100%;
+  font-size: 12px;
+  line-height: 1;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.search__input input::placeholder{
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
