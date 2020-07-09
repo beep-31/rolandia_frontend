@@ -16,25 +16,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
   }
 *::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
   }
 *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-y: auto;
   }
-/* input {
-    outline: none;
-  } */
+
 a {
     text-decoration: none;
   }
@@ -206,35 +207,117 @@ li {
   
 }
 
-button{
-  color: black;
-}
-
-.search__inner{
-  margin: 0 auto;
-  width: 80vw;
-  padding: 10px 20px;
-  background-color: #fac25a;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px #fac25a, 0 0 0 20px #ffeaa7;
-}
-
-.search__inner form{
-  height: 15px;
-}
-
-.search__input input{
-  width: 100%;
-  font-size: 12px;
-  line-height: 1;
-  background-color: transparent;
+.form input,
+.form button{
   color: #fff;
-  outline: none;
-  border: none;
+  border: 0;
+  background-color: transparent;
 }
 
-.search__input input::placeholder{
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+.form__cover{
+  background-color: #fdcb6e;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 10px 40px #fdcb6e, 0 0 0 20px #ffffffeb;
+  margin: 0 auto
+}
+
+.form__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input input{
+  width: 80%;
+  max-width: 280px;
+  height: 40px;
+  font-size: 18px;
+  padding: 25px 5px;
+  line-height: 1;
+
+}
+
+.form__input input::placeholder{
+  color: #fff;
+}
+
+.form__button button{
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 100%;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.button-circle{
+  top: 20%;
+  right: 30%;
+  position: absolute;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-width: 3px;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+
+.form__button span{
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform: rotateZ(52deg);
+  transition: 0.3s ease all;
+  bottom: 31%;
+  right: 22%;
+}
+
+.form__button span:before,
+.form__button span:after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  opacity: 0;
+  bottom: 31%;
+  right: 56%;
+  border-radius: 2px;
+  transform: rotateZ(0deg);
+  transition: 0.3s ease;
+}
+
+.form__button:hover .button-circle{
+  top: 45%;
+  width: 32px;
+  height: 4px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form__button:hover span{
+  top: 48%;
+  right: 32%;
+  width: 10px;
+  transform: rotateZ(0);
+  
+}
+
+.form__button:hover button span:before{
+    opacity: 1;
+    bottom: 7px;
+    transform: rotateZ(52deg);
+    left: -22%;
+}
+
+.form__button:hover button span:after{
+    opacity: 1;
+    bottom: -6px;
+    transform: rotateZ(-52deg);
+    left: -22%;
 }
