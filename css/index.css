@@ -1,17 +1,48 @@
-@font-face{
-    font-family: 'Yatra One', cursive;
-    src: url('../fonts/logo/YatraOne-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-} 
+/* Lato regular */
 
 @font-face{
-    font-family: 'Montserrat', sans-serif;
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato Regular/Lato-Regular.eot"),
+       url("../fonts/Lato/Lato Regular/Lato-Regular.woff2") format('woff2'),
+       url("../fonts/Lato/Lato Regular/Lato-Regular.woff") format('woff'),
+       url("../fonts/Lato/Lato Regular/Lato-Regular.ttf") format('trutype');
+      
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* Lato Light  */
+@font-face{
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato Light/Lato-Light.eot"),
+       url("../fonts/Lato/Lato Light/Lato-Light.woff2") format('woff2'),
+       url("../fonts/Lato/Lato Light/Lato-Light.woff") format('woff'),
+       url("../fonts/Lato/Lato Light/Lato-Light.ttf") format('trutype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Lato Bold  */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato Black/Lato-Black.eot"),
+       url("../fonts/Lato/Lato Black/Lato-Black.woff2") format('woff2'),
+       url("../fonts/Lato/Lato Black/Lato-Black.woff") format('woff'),
+       url("../fonts/Lato/Lato Black/Lato-Black.ttf") format('trutype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Maven pro medium */
+@font-face{
+  font-family: 'Maven Pro';
+  src: url("../fonts/Maven Pro/MavenPro-Medium.eot"),
+       url("../fonts/Maven Pro/MavenPro-Medium.woff2") format('woff2'),
+       url("../fonts/Maven Pro/MavenPro-Medium.woff") format('woff'),
+       url("../fonts/Maven Pro/MavenPro-Medium.ttf") format('trutype');
+  font-weight: 500;
+  font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
@@ -32,27 +63,30 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-y: auto;
-  }
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
 
 a {
-    text-decoration: none;
-  }
-  ul,
+  text-decoration: none;
+}
+
+ul,
 li {
-    list-style: none;
+  list-style: none;
   }
 
 
 .header{
-    background-color: #fac25a;
+    background-color: #e67e22;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0px;
-    font-family: 'Yatra One', cursive;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
     color: #f5f6fa;
+    width: 100vw;
     
 }
 
@@ -117,7 +151,7 @@ li {
   justify-content: space-between;
   height: 100%;
   z-index: 5;
-  background-color: #dcdde1;
+  background-color: #e67e22;
 }
 
 .nav__close{
@@ -141,7 +175,7 @@ li {
   display: flex;
   width: 35px;
   height: 4px;
-  background-color: #fff;
+  background-color: black;
   position: relative;
   cursor: pointer;
   border-radius: 5px;
@@ -155,7 +189,7 @@ li {
   width: 35px;
   height: 4px;
   transform: rotate(90deg);
-  background-color: #fff;
+  background-color: black;
   border-radius: 5px;
 }
 
@@ -201,7 +235,7 @@ li {
 }
 
 .intro__title{
-  font-size: 24px;
+  font-size: 20px;
   color: #202020;
   margin-bottom: 50px;
   
@@ -219,7 +253,7 @@ li {
 }
 
 .form__cover{
-  background-color: #fdcb6e;
+  background-color: #e67e22;
   border-radius: 20px;
   width: 80%;
   box-shadow: 0 10px 40px #fdcb6e, 0 0 0 20px #ffffffeb;
@@ -328,8 +362,8 @@ li {
 
 .info__intro{
   text-align: center;
-  font-size: 18px;
-  padding: 0px 15px;
+  font-size: 16px;
+  padding: 0px 25px;
 }
 
 .info__websites{
@@ -340,8 +374,16 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0px;
+  margin: 30px auto;
   text-align: center;
+}
+
+.info__website__description{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  max-width: 240px;
+  margin: 0 auto;
+  color: #7d7d7d;
 }
 
 .info__website__img{
@@ -354,14 +396,21 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #fac25a;
+  background-color: #34495e;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  color: #7d7d7d;
+  font-size: inherit;
 }
 
 .footer__logo{
-  font-size: 20px;
+  display: inline;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
   color: #fff;
   border-radius: 50%;
-  background-color: #ee7a14;
-  margin-bottom: 20px;
-  padding: 10px;
+  background-color: #e67e22;
+  padding: .6rem;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
 }
