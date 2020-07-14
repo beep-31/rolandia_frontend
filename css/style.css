@@ -178,14 +178,14 @@ li {
 }
 
 .nav__links a{
-  color: black;
+  color: #ecf0f1;
 }
 
 .close-item{
   display: flex;
   width: 35px;
   height: 4px;
-  background-color: black;
+  background-color: #ecf0f1;
   position: relative;
   cursor: pointer;
   border-radius: 5px;
@@ -199,7 +199,7 @@ li {
   width: 35px;
   height: 4px;
   transform: rotate(90deg);
-  background-color: black;
+  background-color: #ecf0f1;
   border-radius: 5px;
 }
 
@@ -247,7 +247,9 @@ li {
 .intro__title{
   font-size: 20px;
   color: #202020;
+  padding: 0 10px;
   margin-bottom: 50px;
+  font-family: 'Maven Pro';
   
 }
 
@@ -480,6 +482,8 @@ li {
   text-align: center;
   font-size: 16px;
   padding: 0px 25px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
 }
 
 .info__websites{

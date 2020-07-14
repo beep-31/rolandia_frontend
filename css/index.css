@@ -146,8 +146,8 @@
   }
   
   .search-input input::placeholder{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
   }
   
   .nav__mobile{
@@ -178,14 +178,14 @@
   }
   
   .nav__links a{
-    color: black;
+    color: #ecf0f1;
   }
   
   .close-item{
     display: flex;
     width: 35px;
     height: 4px;
-    background-color: black;
+    background-color: #ecf0f1;
     position: relative;
     cursor: pointer;
     border-radius: 5px;
@@ -199,7 +199,7 @@
     width: 35px;
     height: 4px;
     transform: rotate(90deg);
-    background-color: black;
+    background-color: #ecf0f1;
     border-radius: 5px;
   }
   
