@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- svg icons -->
@@ -67,11 +67,11 @@
             </div>
         </section>
         <section class="form">
-            <div class="form__cover">
-                <form action="" method="GET">
+            <form action="index.html" method="GET">
+                <div class="form__cover">
                     <div class="form__inner">
                         <div class="form__input">
-                            <input type="text" placeholder="Search" required>
+                            <input type="text" name="productSearch" placeholder="Search" required>
                         </div>
                         <div class="form__button">
                             <button type="submit">
@@ -80,8 +80,16 @@
                             </button>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="form__dropdown">
+                    <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance">
+                    <label for="sort-relevance">Relevance</label>
+                    <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low">
+                    <label for="sort-low">Price Low to High</label>
+                    <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high">
+                    <label for="sort-high">Price High to Low</label>
+                </div>
+            </form>
         </section>
         <section class="info">
             <div class="info__intro">

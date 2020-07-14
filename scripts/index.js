@@ -14,15 +14,4 @@ $(document).ready(function(){
             left: "-100%"
         }, 300); 
     });
-
-    $('.form__dropdown').click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this).toggleClass('form__dropdown--expanded');
-        $('#'+$(e.target).attr('for')).prop('checked',true);
-      });
-      $(document).click(function() {
-        $('.form__dropdown').removeClass('form__dropdown--expanded');
-      });
-    
 });
