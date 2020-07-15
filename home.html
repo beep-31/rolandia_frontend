@@ -30,6 +30,16 @@
             </a>
         </div>
     </nav>
+    <section class="search-input" id="searchbox">
+        <form action="index.html" method="GET">
+            <input type="text" name="search-item" placeholder="Search here" required>
+            <button type="submit">
+                <svg width="14px" height="14px">
+                    <use xlink:href="#search">
+                </svg>
+            </button>
+        </form>
+    </section>
     <header class="header">
         <div class="header__inner">
             <div class="header__mobile">
@@ -51,12 +61,6 @@
                 <svg id="search_icon">
                     <use xlink:href="#search">
                 </svg>
-                <section class="search-input" id="searchbox">
-                    <form action="#">
-                        <input type="text" name="search-item" placeholder="Search here">
-                        <input type="submit">
-                    </form>
-                </section>
             </div>
         </div>
     </header>
